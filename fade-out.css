@@ -1,0 +1,18 @@
+#fade-div{
+    display: flex;
+    gap: 50px;
+    pointer-events: none;
+}
+
+#fade-div .child {
+    transition: .3s all;
+    pointer-events: auto;
+}
+
+#fade-div .child:hover {
+    transform: scale(1.1);
+}
+
+#fade-div:hover .child:not(:hover) {
+    opacity: .5;
+}

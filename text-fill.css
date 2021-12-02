@@ -1,0 +1,17 @@
+h1 {
+    position: relative;
+}
+
+h1::before {
+    content: attr(data-text);
+    transition: width 275ms ease;
+    position: absolute;
+    color: #f6ce;
+    width: 0;
+    overflow: hidden;
+    white-space: pre;
+}
+
+h1:hover::before {
+    width: 100%;
+}
